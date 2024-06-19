@@ -1,0 +1,97 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #000080; /* Azul Marino */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #000080; /* Azul Marino */
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form textarea {
+    resize: vertical;
+    padding: 10px;
+    font-size: 14px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #000080; /* Azul Marino */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1E3F7B; /* Tono más claro de azul marino */
+}
+
+/* Retroalimentación de soluciones */
+.solucion {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    background-color: #000080; /* Azul Marino */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

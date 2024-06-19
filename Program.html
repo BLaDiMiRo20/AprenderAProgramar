@@ -1,0 +1,689 @@
+
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende a utilizar las herramientas integradas en el navegador para explorar el HTML subyacente de los sitios web que visitas a diario."/>
+
+  <title>Curso básico de como aprender a porgramar: Explora el HTML de otras páginas web </title>
+
+  <meta property="og:title" content="Curso básico de HTML: Explora el HTML de otras páginas web "/>
+  <meta property="og:description" content="Aprende a utilizar las herramientas integradas en el navegador para explorar el HTML subyacente de los sitios web que visitas a diario."/>
+  <meta property="og:type" content="gcfglobal.lesson" />
+  <meta property="og:image" content="https://media.gcflearnfree.org/global/layout/social/gcf-website-image.png"/>
+  <meta property="og:site_name" content="GCFGlobal.org"/>
+  <meta property="fb:admins" content="100002095670400"/>
+  <meta property="fb:page_id" content="198172680436"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="GCFGlobal.org"/>
+  <meta name="twitter:title" content="Curso básico de HTML: Explora el HTML de otras páginas web "/>
+  <meta name="twitter:description" content="Aprende a utilizar las herramientas integradas en el navegador para explorar el HTML subyacente de los sitios web que visitas a diario."/>
+  <meta name="twitter:url" content="https://edu.gcfglobal.org/es/curso-basico-de-html/explora-el-html-de-otras-paginas-web-/1/"/>
+
+  <link  rel="preconnect" as="font" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Kalam:400|Montserrat:100,200,300,500|Overpass:100,300,400,600,700,900?display=swap' type='text/css'>
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Kalam:400|Montserrat:100,200,300,500|Overpass:100,300,400,600,700,900?display=swap' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--start css-->
+  <link rel="stylesheet" type="text/css" href="site.css">
+  <link rel="stylesheet" type="text/css" href="header.css">
+  <link rel="stylesheet" type="text/css" href="lesson.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="ict.css">
+  <link rel="stylesheet" type="text/css" href="audio-controls.css">
+  <link rel="stylesheet" type="text/css" href="rtl.css">
+  <link rel="stylesheet" type="text/css" href="slides.css">
+  <link rel="stylesheet" type="text/css" href="labeledgraphic.css">
+  <link rel="stylesheet" type="text/css" href="lesson-resources.css">
+  <link rel="stylesheet" type="text/css" href="math.css">
+  <link rel="stylesheet" type="text/css" href="mathactivity-2016.css">
+  <!--end css-->
+
+  <!-- Google Tag Manager -->
+  <script type="589d276859ed819dbf8bc76a-text/javascript">(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-52HRH7V');</script>
+  <!-- End Google Tag Manager -->
+
+  <script defer src="lessonPage.concat.js" type="589d276859ed819dbf8bc76a-text/javascript"></script>
+
+  
+    <link href="https://edu.gcfglobal.org/es/curso-basico-de-html/explora-el-html-de-otras-paginas-web-/1/" rel="canonical"/>
+  
+
+  
+    <link rel="manifest" href="/manifest.json" />
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async="" type="589d276859ed819dbf8bc76a-text/javascript"></script>
+  
+  <script type="589d276859ed819dbf8bc76a-text/javascript">
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function () {
+          OneSignal.init({
+              appId: '423d4116-59bc-4eb4-9da2-74f755f06c80'
+          });
+      });
+    // Check subscription and add tag
+    OneSignal.push(function () {
+        OneSignal.on('subscriptionChange', function (isSubscribed) {
+            console.log("The user's subscription state is now:", isSubscribed);
+            if (isSubscribed == true) {
+                OneSignal.sendTags({
+                    course: 'curso-basico-de-html'
+                }).then(function (tagsSent) {
+                    console.log("tagsSent: " + JSON.stringify(tagsSent));
+                });
+            }
+        });
+    });
+  </script>
+  <!-- MailerLite Universal -->
+  <script type="589d276859ed819dbf8bc76a-text/javascript">
+    (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+    var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+    f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+    var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+    _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+    var ml_account = ml('accounts', '1545190', 'u3b1c1l2d0', 'load');
+  </script>
+  <!-- End MailerLite Universal -->
+
+  <!-- Global site tag (gtag.js) - Google Ads: 1060708011 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1060708011" type="589d276859ed819dbf8bc76a-text/javascript"></script>
+  <script type="589d276859ed819dbf8bc76a-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-1060708011');
+  </script>
+  
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Course","url":"https://edu.gcfglobal.org/es/curso-basico-de-html/","name":"Curso básico de HTML","description":"Aprende a utilizar las herramientas integradas en el navegador para explorar el HTML subyacente de los sitios web que visitas a diario.","provider":{"@type":"Organization","name":"GCFGlobal Learning","sameAs":"https://edu.gcfglobal.org"},"isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/OnlineOnly","url":"https://edu.gcfglobal.org/es/curso-basico-de-html/","category":"Education"},"hasCourseInstance":{"@type":"CourseInstance","name":"Explora el HTML de otras páginas web ","description":"Aprende a utilizar las herramientas integradas en el navegador para explorar el HTML subyacente de los sitios web que visitas a diario.","url":"https://edu.gcfglobal.org/es/curso-basico-de-html/explora-el-html-de-otras-paginas-web-/1/","courseMode":"Online","inLanguage":"Spanish","isAccessibleForFree":true,"courseWorkload":"P3W"}}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52HRH7V" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<div class="header-wrapper">
+	<header>
+	    <div id="page-header" class="desktop-header">
+	    	<div class="primary-header">
+				<div id="subjects-search">
+					<div id="subjects-search-box">
+
+						<div class="topnav-sls-container">
+							
+								<a class="envivo-butt livebutt" target="_blank" href="#"><img src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/envivo.svg"></a>
+							
+							<a aria-label="GCFGlobal homepage" class="logo-link home-header-logo" href="/es/">
+								<img class="logo logo-left main-logo-es" width="223px" height="60px" src="CulturaDigital.png" alt="GCFGlobal Logo">
+							</a>
+							<form id="smallSearchbar" action="/es/search/" onSubmit="if (!window.__cfRLUnblockHandlers) return false; showSearchSpinner()" data-cf-modified-589d276859ed819dbf8bc76a-="">
+								<span class="form-content-container">
+									<input class="topnav-search-field-small home-search-input" pattern=".{1,}" required type="text" name="q" placeholder="¿Qué quieres aprender?" title="Search bar">
+
+									<button class="search-submit-btn-small search-close-btn" type="button" aria-label="close search bar">
+										<i onClick="if (!window.__cfRLUnblockHandlers) return false; showSearchBar('close')" class="material-icons close-search-x" data-cf-modified-589d276859ed819dbf8bc76a-="">close</i>
+									</button>
+									<button class="search-submit-btn-small" type="submit" aria-label="search button">
+										<i onClick="if (!window.__cfRLUnblockHandlers) return false; showSearchBar('close')" class="material-icons" data-cf-modified-589d276859ed819dbf8bc76a-="">search</i>
+									</button>
+									<img class="search-submit-spinner left-spinner" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/transparent-loading-spinner.gif" alt="">
+								</span>
+							</form>
+						</div>
+
+					</div>
+					<div class="topnav-rightbox">
+
+						<!-- Search -->
+						<button onClick="if (!window.__cfRLUnblockHandlers) return false; showSearchBar('open')" class="header-btn header-search-btn home-search-button" aria-label="open search bar" data-cf-modified-589d276859ed819dbf8bc76a-="">
+							<i class="material-icons">search</i>
+						</button>
+
+						<!-- Menu trigger -->
+						
+                            <button class="subjects-select home-header-topics-button" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleSubjectsDropdown()" data-cf-modified-589d276859ed819dbf8bc76a-="">
+                                <i class="dropdown-hamburger material-icons">menu</i>
+                                <p>Menú</p>
+                            </button>
+                        
+
+						
+                            <div class="dropdown-wrapper">
+                                <button class="dropdown-close-x" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleSubjectsDropdown()" data-cf-modified-589d276859ed819dbf8bc76a-="">
+                                    <i class="material-icons">close</i>
+                                </button>
+                                <div class="dropdown-inner site-nav subjectMenuOption selectedMenuOption">
+                                    <ul class="site-nav-contents site-nav">
+    <li class="supercollection">
+        
+            <a href="/es/subjects/tecnologia/">Tecnología</a>
+            <ul class="level-1">
+                <li>
+                        <a href="/es/informatica-basica/">Informática básica</a>
+                </li>
+                <li>
+                    <a href="/es/crear-un-correo-electronico/">Correo electrónico</a>
+                </li>
+                <li>
+                    <a href="/es/word-2013/">Word 2013</a>
+                </li>
+                <li>
+                    <a href="/es/microsoft-excel-2010/">Excel 2010</a>
+                </li>
+                <li>
+                    <a href="/es/crear-cuenta-en-facebook/">Facebook</a>
+                </li>
+                    <li>
+                    <a href="/es/subjects/tecnologia/">Más cursos...</a>
+                </li>
+            </ul>
+        
+    </li>
+    <li class="supercollection">
+        
+            <a href="/es/subjects/matematicas/">Matemáticas</a>
+            <ul class="level-1">
+                <li>
+                    <a href="/es/los-conjuntos/">Los conjuntos</a>
+                </li>
+                <li>
+                    <a href="/es/fraccionarios/">Fraccionarios</a>
+                </li>
+                <li>
+                    <a href="/es/los-numeros/">Los números</a>
+                </li>
+                <li>
+                    <a href="/es/sumar-y-restar/">Sumar y restar</a>
+                </li>
+                <li>
+                    <a href="/es/divisores-y-multiplos/">Divisores y múltiplos</a>
+                </li>
+                <li>
+                    <a href="/es/algebra/">Álgebra</a>
+                </li>
+                <li>
+                    <a href="/es/subjects/matematicas/">Más cursos...</a>
+                </li>
+            </ul>
+        
+    </li>
+    <li class="supercollection">
+        
+            <a href="/es/subjects/formacion-profesional/">Formación profesional</a>
+            <ul class="level-1">
+                <li>
+                    <a href="/es/credito/">Crédito</a>
+                </li>
+                <li>
+                    <a href="/es/emprendimiento/">Emprendimiento</a>
+                </li>
+                <li>
+                    <a href="/es/mundo-laboral/">Mundo laboral</a>
+                </li>
+                <li>
+                    <a href="/es/acceso-a-la-educacion-superior/">Acceso a la educación superior</a>
+                </li>
+                <li>
+                    <a href="/es/finanzas-personales/">Finanzas personales</a>
+                </li>
+                <li>
+                    <a href="/es/curso-de-fotografia-digital/">Curso de fotografía digital</a>
+                </li>
+                <li>
+                    <a href="/es/subjects/formacion-profesional/">Más cursos...</a>
+                </li>
+            </ul>
+        
+    </li>
+
+    <li class="supercollection">
+        
+            <a href="https://idiomas.gcfglobal.org/es/">Inglés</a>
+            <ul class="level-1">
+                <li><a href="https://idiomas.gcfglobal.org/es/curso/ingles/a1/">Beginner</a></li>
+                <li><a href="https://idiomas.gcfglobal.org/es/curso/ingles/a2/">Basic</a></li>
+                <li><a href="https://idiomas.gcfglobal.org/es/curso/ingles/b1/">Intermediate</a></li>
+                <li><a href="https://idiomas.gcfglobal.org/es/curso/ingles/b2/">Upper intermediate</a></li>
+                <li><a href="https://idiomas.gcfglobal.org/es/curso/ingles/c1/">Advanced</a></li>
+                <li><a href="https://www.juegosparaaprenderingles.org/">Juegos</a></li>
+            </ul>
+        
+    </li>
+
+    
+ </ul>
+                                    <ul class="dropdown-contents level-1 bottom-row">
+                                        <li><a href="/es/topics/">Todos los cursos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+
+						
+							<button name="print-button" onclick="if (!window.__cfRLUnblockHandlers) return false; window.print()" class="print-button header-btn" data-cf-modified-589d276859ed819dbf8bc76a-="">
+								<i class="material-icons">print</i>
+							</button>
+						
+
+						<!-- Language selector -->
+						<div class="topnav-language">
+							<div class="language-dropdown">
+								<button onclick="if (!window.__cfRLUnblockHandlers) return false; toggleLanguageMenu()" aria-label="Elige tu idioma" aria-haspopup="true" aria-expanded="false" aria-controls="acc-language-menu" id="acc-language-button" class="language-dropdown-button" data-cf-modified-589d276859ed819dbf8bc76a-="">
+									Español
+									<i class="material-icons more" aria-hidden="true">expand_more</i>
+									<i class="material-icons less" aria-hidden="true">expand_less</i>	
+								</button>
+								<ul id="acc-language-menu" class="language-dropdown-menu" aria-labelledby="acc-language-button">
+									<li>
+										<a onclick="if (!window.__cfRLUnblockHandlers) return false; event.preventDefault(); toggleLanguageMenu()" href="/es/" class="home-header-language-option-link" data-cf-modified-589d276859ed819dbf8bc76a-="">
+											Español
+											<i class="material-icons more" aria-hidden="true">expand_more</i>
+											<i class="material-icons less" aria-hidden="true">expand_less</i>	
+										</a>
+									</li>
+									<li>
+										<a href="/pt/" class="home-header-language-option-link">
+											Português
+										</a>
+									</li>
+									<li>
+										<a href="/en/" class="home-header-language-option-link">
+											English
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Sign actions -->
+						<div class="sign__wrapper" id="header-sign-options">
+							<div class="sign__loading">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+						<!-- End -->
+					</div>
+				</div>
+	    	</div>
+
+	    	
+				<div style="display:none;" class="tutorial-banner">
+					<i class="material-icons">info</i>
+					<span>Bienvenido al curso. En este menú verás todas las lecciones que hemos preparado para ti. Para iniciar, solamente, haz clic en la lección que más te interese.</span>
+					<button onclick="if (!window.__cfRLUnblockHandlers) return false; $('.tutorial-banner').remove()" class="wrapper-button close" data-cf-modified-589d276859ed819dbf8bc76a-=""><i class="material-icons">close</i></button>
+				</div>
+			
+	    	<!-- <div class="header-divider"></div> -->
+	    	
+		    	<div class="sub-header">
+		    		<div id="corner-gradient-left"></div>
+		    		<div id="corner-gradient-right"></div>
+		    		<div class="headerfooter-content-wrapper">
+		    			<div id="subheaderContentContainer">
+		    			
+		    				<div class="header-nodesc es">
+<!-- 		    					<h1>
+		    						
+			    						<a class="current-tutorial-title" href="/es/curso-basico-de-html/">Curso básico de HTML</a>&nbsp;-
+		    						
+		    						<span id="current-lesson-title">Explora el HTML de otras páginas web </span>
+		    					</h1> -->
+		    					<div class="title-content">
+			    					
+				    						<h1><a class="current-tutorial-title lesson-header-tutorial-title-link" href="/es/curso-basico-de-html/">Curso básico para progrmar</a>&nbsp;-</h1>
+				    						<h2><span id="current-lesson-title">Explora el HTML de otras páginas web </span></h2>
+		    						
+	    						</div>
+
+		    					
+	    							<a class="header-tutorial-link lesson-header-tutorial-link" href="/es/curso-basico-de-html/">Ir al curso</a>
+	    						
+		    				</div>
+	    				
+	    				<img id="header-img" loading="lazy" class="header-image" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/city-aqua2.svg" alt="">
+	    				</div>
+		    		</div>
+		    	</div>
+	    	
+	    </div>
+
+	    
+	    	
+			    <div class="print-header">
+			    	<div class="print-header-wrapper">
+						<header>
+						    <div class="desktop-header">
+						    	<h1>
+									<div class="print-first-title">Curso básico de HTML</div>
+									<div class="print-second-title">Explora el HTML de otras páginas web </div>
+								</h1>
+								<img class="logo" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/gcfglobal-logo-dark.svg" alt="GCFLearnFree.org" />
+						    </div>
+						</header>
+					</div>
+			    </div>
+		    
+	    
+
+	    <div class="mobile-header">
+	        <div id="page-top">
+	          <a data-route="home" class="home-link" href="/">
+	          	
+					<!-- <img class="homeicon es" src="https://media.gcflearnfree.org/global/logo-es-inverted.svg" alt="GCFAprendeLibre Logo"> -->
+					<img class="homeicon" src="CulturaDigital.png" alt="GCFGlobal Logo">
+            <!--  -->
+	          </a>
+			  <a class="envivo-butt-mobile livebutt" target="_blank" href="#"><img src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/aovivo.svg"></a>
+			  <div class="options_menu_mobile">
+				<div>
+					<i onclick="if (!window.__cfRLUnblockHandlers) return false; handleHeaderOption('search')" class="material-icons menu-icon menu-icon-left" data-cf-modified-589d276859ed819dbf8bc76a-="">search</i>
+				</div>
+				<div>
+					<img id="avatarImageOnMovile" onclick="if (!window.__cfRLUnblockHandlers) return false; handleHeaderOption('account')" style="margin: 0" src="" class="
+							dropdown__trigger--avatar
+							is-movile
+							hide_element
+							material-icons
+							menu-icon
+							menu-icon-center" data-cf-modified-589d276859ed819dbf8bc76a-="">
+					<i id="avatarIconOnMovile" onclick="if (!window.__cfRLUnblockHandlers) return false; handleHeaderOption('account')" class="material-icons menu-icon menu-icon-center" data-cf-modified-589d276859ed819dbf8bc76a-="">
+						person_outline
+					</i>
+					<i id="dropdownIconOnMovile" onclick="if (!window.__cfRLUnblockHandlers) return false; handleHeaderOption('account')" class="material-icons menu-icon menu-icon-dropdown" data-cf-modified-589d276859ed819dbf8bc76a-="">
+						arrow_drop_down
+					</i>
+				</div>
+				<div>
+					<i onclick="if (!window.__cfRLUnblockHandlers) return false; handleHeaderOption('nav')" class="material-icons menu-icon menu-icon-right" data-cf-modified-589d276859ed819dbf8bc76a-="">menu</i>
+				</div>
+			  </div>
+	        </div>
+	        <div id="navcollapse">
+	          <div class="navcollapsecontent">
+	            <a href="/es/topics/">Todos los cursos</a>
+	            
+	            <a href="/es/info/quienes-somos/1/">¿Quiénes somos?</a>
+	            <a href="/es/info/preguntas-frecuentes/1/">Preguntas frecuentes</a>
+	            <a href="/es/info/contactanos/1/">Contáctanos</a>
+
+	            <div class="language-picker">
+		            <a href="/en/">EN</a>
+		            <a href="/es/">ES</a>
+		            <a href="/pt/">PT</a>
+	        	</div>
+	          </div>
+	        </div>
+			<div id="accountNavcollapse">
+				<div class="accountNavcollapsecontent">
+				  <!-- Not logged in -->
+				  <div class="sign__actions is-mobile">
+						
+					<!-- Sign in -->
+					<a id="movileSignin" href="https://account.gcfglobal.org/" class="sign__action">Ingresar</a>
+
+					<!-- Sign up -->
+					<a id="movileSignup" href="https://account.gcfglobal.org/signup" class="sign__action is-primary">¡Crear cuenta!</a>
+
+					<!-- Dashboard -->
+					<a id="movileDashboard" href="https://account.gcfglobal.org/home" class="sign__action hide_element">Panel de usuario</a>
+					
+					<!-- profile -->
+					<a id="movileProfile" href="https://account.gcfglobal.org/profile" class="sign__action hide_element">Perfil</a>
+
+					<!-- logout -->
+					<a id="movileLogout" href="https://account.gcfglobal.org/auth/logout" class="sign__action hide_element">Cerrar sesión</a>
+				  </div>
+				  <!-- End -->
+				</div>
+			  </div>
+	      
+	        <div class="search-control">
+	            <div class="search-container search-container-collapsed">
+					<div class="search-inner-container">
+						
+							<a class="mobile-back-to-tutorial" href="/es/curso-basico-de-html/">
+								<span class="no-break"><i class="material-icons">navigate_before</i> Curso</span>
+							</a>
+						
+						<form id="gcfsearch" method="get" action="/es/search/" onSubmit="if (!window.__cfRLUnblockHandlers) return false; showSearchSpinner()" data-cf-modified-589d276859ed819dbf8bc76a-="">
+							<button type="submit" aria-label="search button"><i class="material-icons">search</i></button>
+							<div class="mobile-search-input-wrapper">	
+								<input id="request" class="searchinput" pattern=".{1,}" required type="text" name="q" name="q" size="21" maxlength="120" placeholder="¿Qué quieres aprender?" autocomplete="off" title="Search bar">
+							</div>
+						</form>
+					</div>
+	            </div>
+	        </div>
+	    </div>
+	</header>
+</div>
+<script defer src="account-methods.js" type="589d276859ed819dbf8bc76a-text/javascript"></script>
+  <div id="background">
+    <div class="mobile-lesson-title">
+      <h1>Curso básico de HTML: Explora el HTML de otras páginas web </h1>
+    </div>
+    <div id="page-wrapper">
+      <div id="content-area">
+        <span style="display:none;" id="playlist-id">612e55dc90347d098804a458</span>
+        <span style="display:none;" id="lesson-id">6138c7c490347d098804a491</span>
+        <div>
+          <div class="text-plus-page content-item">
+            <div id="lessoncontent">
+              
+              <div id="/es/curso-basico-de-html/explora-el-html-de-otras-paginas-web-/1/" class="lesson-block lesson imgBoxShadow" data-title="Explora el HTML de otras páginas web ">
+              
+                <div id="first-divider" class="divider-box">
+                  <div class="infinite-scroll-divider"></div>
+                  <h4 tabindex="0" aria-label="Lesson Divider Página 9: Explora el HTML de otras páginas web ">Página 9: Explora el HTML de otras páginas web </h4>
+                </div>
+                
+                  <p class="scroll-trigger-top">/es/curso-basico-de-html/metadatos-y-el-elemento-head/content/</p>
+                
+                <h3>Explora el HTML de otras páginas web&nbsp;</h3>
+<p>Ahora que ya sabes un poco sobre el <a href="https://edu.gcfglobal.org/es/curso-basico-de-html/que-es-html/1/" target="_blank">HTML básico</a>, te invitamos a explorar el código HTML que usan las páginas web,&nbsp;directamente desde tu navegador y sin necesidad de usar herramientas especiales. Lo único que necesitas son las funciones <strong>"Ver código fuente"</strong> e <strong>"Inspeccionar elemento"</strong>.</p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/6138c7c490347d098804a491_09_08_2021/Cómo-encontrar-el-HTML-de-las-páginas-web.png" alt="Cómo encontrar el HTML de las páginas web" title="Cómo encontrar el HTML de las páginas web"></div>
+<h4>¿Qué es la minificación?&nbsp;</h4>
+<p>Algunos sitios web tienen un HTML simple, similar al que has trabajado en este curso. Sin embargo,&nbsp;hay otras páginas que manejan códigos más complejos.&nbsp;</p>
+<p>Por ejemplo, el HTML de sitios grandes como Amazon o Google es tan denso y confuso que parece algo totalmente distinto a lo que has visto. Existen varias razones por lo que esto pasa, una de las más comunes es la <strong>minificación</strong>.</p>
+<p>La <strong>minificación </strong>es un proceso en el que el código de programación &mdash;ya sea&nbsp;HTML, CSS o JavaScript&mdash; es comprimido automáticamente para reducir el tamaño del archivo.</p>
+<p>Cualquier formato que se haya incluido para hacer que el código sea más fácil de leer para un humano es removido, porque tu navegador, que es una máquina,&nbsp;no lo necesita. Remover cosas también hace que el archivo sea más pequeño, y mientras más pequeño sea un archivo, más rápido lo puede cargar tu navegador.&nbsp;</p>
+<p><span style="font-size: 1em;">Podrías minificar el proyecto que estás trabajando y quedaría así:</span></p>
+<pre>
+&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;title&gt;Las mejores reseñas de cine&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;div&gt; &lt;h2&gt;Reseña: El perro basquetbolista (2008)&lt;/h2&gt; &lt;img src="https://media.gcflearnfree.org/global/coding/html-basico/resources/img/perro-basquetbolista.png"&gt;&lt;p&gt;&lt;i&gt;4 de 5 estrellas&lt;/i&gt;&lt;/p&gt;&lt;p&gt;De la directora &lt;b&gt;Vicki Fleming&lt;/b&gt;, llega la conmovedora historia de un niño llamado Pete (Trent Dugson) y su perro Rover (el actor Brinson Lumblebrunt es el encargado de hacer su voz). Al principio, parece la típica historia en la que un niño y su perro aprenden el verdadero valor de la amistad, pero hay un giro que hace que esta película sea diferente: Rover juega al baloncesto, ¡y lo hace muy bien!&lt;/p&gt;&lt;p&gt;Esta película tiene todo lo que puedes pedir:&lt;/p&gt;&lt;ul&gt; &lt;li&gt;Un deporte&lt;/li&gt;&lt;li&gt;Un perro&lt;/li&gt;&lt;li&gt;Suspenso para morderse las uñas&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;Aunque no se incluyen los 150 minutos de un partido de campeonato completo,"El perro basquetbolista" logra captar tu atención durante las 4 horas que dura el film. Al final, cualquier amante de los perros puede llorar. Si te gusta el baloncesto o las mascotas, esta es la película para ti.&lt;/p&gt;&lt;p&gt;Encuentra el listado completo del reparto en la página web de &lt;a href="https://edu.gcfglobal.org"&gt;El perro basquetbolista&lt;/a&gt;&lt;/p&gt;&lt;button&gt;Ver la siguiente reseña&lt;/button&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 
+</pre>
+<p>Por eso, es común ver que los sitios web incluyen código JavaScript o CSS minificado, junto con el código HTML. Si miras&nbsp;un sitio web como <strong>Google</strong> puedes pensar que su código es&nbsp;simple porque no ves mucho en la página:</p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/6138c7c490347d098804a491_09_08_2021/Captura de Pantalla 2021-10-01 a la(s) 4.56.18 p.&nbsp;m..png" style="width: 532px; height: 211.741px;" alt="Cómo es el HTML de Google" title="Cómo es el HTML de Google" width="532" height="211.74099999999999"></div>
+<p>Pero, si observas el código fuente de la página, te encontrarás con un montón de datos que te harán sentir un poco intimidado.</p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/6138c7c490347d098804a491_09_08_2021/Captura de Pantalla 2021-10-01 a la(s) 4.57.41 p.&nbsp;m..png" alt="Cómo se ve el código de Google" title="Cómo se ve el código de Google"></div>
+<p>Puedes pensar que un genio programador escribió toda esta información pero, en realidad, todo lo que originalmente hacía que el código fuera legible ha sido removido para que las páginas carguen más rápido. Por eso, ni los programadores más experimentados podrían saber cómo era el código al inicio.</p>
+<p>En pocas palabras, es muy útil mirar el código de sitios web existentes para aprender un poco más, pero no dejes que nada de lo que ves te desanime. <strong>Los códigos no son tan complicados&nbsp;como parecen</strong>.</p>
+<h4>Ver código fuente</h4>
+<p>La forma más sencilla para ver el código HTML de una página web es usando la opción&nbsp;&nbsp;<strong>"Ver código fuente"</strong> o <strong>"Ver fuente"</strong>. La mayoría de navegadores conocidos&nbsp;&mdash;Chrome, Firefox, o Edge&mdash; la incluyen como una opción del navegador y no tienes que configurarla.&nbsp;</p>
+<p>El proceso es similar de navegador a navegador, pero en Chrome simplemente puedes hacer clic derecho en cualquier punto de la página web y seleccionar <strong>"Ver el código fuente de la página"</strong>.</p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/6138c7c490347d098804a491_09_08_2021/Ver-el-código-fuente-de-la-página.png" style="width: 314px; height: 287.028px;" alt="Ver el código fuente de la página" title="Ver el código fuente de la página" width="314" height="287.028"></div>
+<p>Esto te permitirá ver el documento HTML exacto que tu navegador está leyendo. Dependiendo del sitio web, puede ser útil para observar cómo está estructurado el código HTML. En otros casos te puedes encontrar con algo muy desordenado.&nbsp;</p>
+<h4>Inspeccionar elemento</h4>
+<p>Una herramienta más simplificada, pero llena de funcionalidades para ver el código HTML de un sitio web es <strong>"Inspeccionar elemento"</strong>. También está&nbsp;incluída en la mayoría de navegadores populares, aunque algunos, requieren de una configuración especial para habilitarla.&nbsp;</p>
+<p>En Chrome, solo tienes que <strong>hacer clic derecho</strong> en cualquier parte del sitio web y seleccionar <strong>"Inspeccionar"</strong>.</p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/6138c7c490347d098804a491_09_08_2021/Captura de Pantalla 2021-10-01 a la(s) 5.00.19 p.&nbsp;m..png" style="width: 213px; height: 233.205px;" alt="Inspeccionar código de Google" title="Inspeccionar código de Google" width="213" height="233.20499999999998"></div>
+<p>Se abrirá la <strong>ventana del inspector</strong>, la cual, se&nbsp;encuentra en la parte de abajo o a la derecha de tu navegador. Se ve un poco diferente dependiendo del navegador que uses, pero las funciones básicas son siempre las mismas. Hay mucho que ver, pero no te preocupes, porque <strong>solo la parte HTML del código nos interesa en este moment</strong><strong>o</strong>. En Chrome, se ve así:</p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/6138c7c490347d098804a491_09_08_2021/Inspeccionar-elementos-html-de-una-página.png" style="width: 371px; height: 611.202px;" width="371" height="611.202" alt="Cómo inspeccionar los elementos HTML de una página" title="Cómo inspeccionar los elementos HTML de una página"></div>
+<p class="attention">Si ves algo y no entiendes cuál es su función, ¡no te preocupes!&nbsp;<strong>Su propósito es dar acceso</strong> a una variedad de herramientas que alguien podría necesitar para el desarrollo web en todo tipo de situaciones.</p>
+<p>En la <strong>ventana del inspector</strong>, verás todo el código HTML de la página desplegado con anotaciones legibles. También puedes usar las flechas al lado de cada elemento para expandirlos y cerrarlos, lo que te permite mostrar u ocultar los elementos que contienen:</p>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/6138c7c490347d098804a491_09_08_2021/Inspector-de-archivos-html.png" style="width: 693px; height: 139.866px;" alt="Inspector de archivos HTML" title="Inspector de archivos HTML" width="693" height="139.866"></div>
+<p>Una de las funciones más útiles de esta ventana es&nbsp;que la puedes usar para ver la conexión entre un elemento HTML y cómo se ve en la página en tiempo real. Cuando pasas el cursor sobre un elemento en la ventana del inspector, el elemento correspondiente será resaltado en la página web:</p>
+<div></div>
+<div><img loading="lazy" src="https://media.gcflearnfree.org/content/6138c7c490347d098804a491_09_08_2021/GIF HTML.gif" alt="Cómo se ve la herramienta Inspeccionar HTML " title="Cómo se ve la herramienta Inspeccionar HTML "></div>
+<p>Cuando te sientas cómodo con la ventana del inspector, podrás explorar el código HTML de los sitios web que visites a diario y ver la estructura interna que compone lo que ves en la página.</p>
+<h4>¡Hazlo tú mismo!</h4>
+<p>Prueba tus habilidades para inspeccionar el código HTML. Busca el archivo <strong>"index.html"</strong> y sigue estos pasos:</p>
+<ol><li>Abre <strong><a href="https://media.gcflearnfree.org/global/coding/html-basico/explorar-base.html" target="_blank">este link</a></strong>. Es una versión un poco diferente a la del proyecto que has trabajado en este curso.</li><li>Haz clic derecho y selecciona la opción <strong>"Inspeccionar"</strong>.</li><li>Hay algo extra en este código HTML. Intenta encontrarlo en la ventana del inspector. Ten en cuenta que puedes expandir algunos elementos haciendo clic en las flechas para mirar su contenido.&nbsp;</li><li>Si aún no lo has encontrado, intenta con la herramienta <strong>"Ver código fuente"</strong>. Debería ser más fácil de ubicarlo allí.</li><li><strong><a href="https://media.gcflearnfree.org/global/coding/html-basico/explorar.html" target="_blank">Haz clic aquí</a></strong><span style="font-size: 19.04px;"> para ver esta versión, donde resaltamos el elemento que&nbsp;fue añadido en el visualizador y luego, intenta encontrarlo nuevamente en el código HTML.</span></li></ol>
+<p>¡Felicitaciones!, ahora ya sabes cómo&nbsp;inspeccionar un código HTML.</p>
+<p class="chevron">Falta poco para terminar el <em>Curso Básico de HTML</em>. ¡Te esperamos en la siguiente página!<br></p>
+
+                <div class="infinite-nav ">
+                  <!-- <a class="linkblue-button returnLink" href="/es/curso-basico-de-html/"><span>Volver al curso</span></a> -->
+                  
+                    <a role="button" tabindex="0" aria-label="Next Lesson" onMouseEnter="if (!window.__cfRLUnblockHandlers) return false; $(this).find('img').attr('src', 'https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/outline-arrow_downward-hover.svg')" onMouseLeave="if (!window.__cfRLUnblockHandlers) return false; $(this).find('img').attr('src', 'https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/outline-arrow_downward.svg')" class="linkblue-button nextLoadMore" onclick="if (!window.__cfRLUnblockHandlers) return false; infiniteScroll.getNextLesson('612e55dc90347d098804a458', '6138c7c590347d098804a492')" onkeydown="if (!window.__cfRLUnblockHandlers) return false; infiniteScroll.keyNextLesson(event, '612e55dc90347d098804a458', '6138c7c590347d098804a492')" data-cf-modified-589d276859ed819dbf8bc76a-="">
+                      <!-- <span>Cargar:</span>&nbsp;<span>Más recursos HTML</span> -->
+                      <img class="continue-arrow" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/outline-arrow_downward.svg" alt=""/><span>Continuar</span>
+                    </a>
+                  
+                  
+                </div>
+
+                <div class="fullpage-nav">
+                  <div class="full-page-divider"></div>
+                  <div class="previous">
+                    <div class="arrow-box">
+                      <img id="prev" src="https://media.gcflearnfree.org/assets/icons/textplus/bottom-nav-left-arrows.png" alt="previous">
+                    </div>
+                    <a href="/es/curso-basico-de-html/metadatos-y-el-elemento-head/1/">Previous: Metadatos y el elemento head</a>
+                  </div>
+                  <div class="next">
+                    <a href="/es/curso-basico-de-html/mas-recursos-html/1/">
+                      <span>Cargar:</span><span>Más recursos HTML</span>
+                    </a>
+                    <div class="arrow-box">
+                      <img id="next" src="https://media.gcflearnfree.org/assets/icons/textplus/bottom-nav-right-arrows.png" alt="next">
+                    </div>
+                  </div>
+                </div>
+
+                
+                  <p class="scroll-trigger">/es/curso-basico-de-html/mas-recursos-html/content/</p>
+                
+              </div>
+            </div> <!--Close: lessoncontent-->
+          </div>
+        </div>
+        <div class="push"></div>
+      </div>
+      <!-- <div id="edlActivityModal" class="overlay-content overlay-body modal"></div> -->
+      
+    </div>
+  </div>
+  <footer class="footer">
+
+    
+
+    <div class="desktopfooter">
+      <div class="main-footer">
+        <div class="footer-drag-handle" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleFooter()" data-cf-modified-589d276859ed819dbf8bc76a-="">
+          <i class="up-arrow material-icons">keyboard_arrow_up</i>
+          <i class="down-arrow material-icons">keyboard_arrow_down</i>
+        </div>
+        <!-- <div class="footer-section-headers"></div> -->
+        <div id="footerContent">
+          <div>
+            <div class="footer-links-container">
+              <div id="sectionOne" class="text-links">
+                <h4 class="footerheaders">Acerca De Nosotros</h4>
+                <a class="home-footer-link about-us-section" href="/es/info/quienes-somos/1/">¿Quiénes somos?</a><br/>
+                <a class="home-footer-link about-us-section" href="/es/info/equipo-de-trabajo/1/">Equipo de trabajo</a><br/>
+                
+                
+                  <a class="home-footer-link about-us-section" href="https://careers.gcfglobal.org/" target="_blank">Trabaja con nosotros</a><br/>
+                
+                
+                <a class="home-footer-link about-us-section" href="https://partners.gcfglobal.org/es">Asóciate con nosotros</a><br/>
+              </div>
+              <div id="sectionTwo" class="text-links">
+                <h4 class="footerheaders">Recursos Educativos</h4>
+                <a class="home-footer-link educators-section" href="https://aprender.gcfglobal.org/es-material-docente">Espacio docente</a><br/>
+                
+              </div>
+              <div id="sectionThree" class="text-links">
+                <h4 class="footerheaders">Ayuda y Soporte</h4>
+                
+                <a class="home-footer-link help-section" href="/es/info/preguntas-frecuentes/1/">Preguntas frecuentes</a><br/>
+                
+                <a class="home-footer-link help-section" href="/es/info/condiciones-de-servicio/1/">Condiciones de Servicio</a><br/>
+                <a class="home-footer-link help-section" href="/es/info/politica-de-privacidad/1/">Política de Privacidad</a><br/>
+                <a class="home-footer-link help-section" href="/es/info/politica-de-cookies/1/">Política de Cookies</a><br/>
+                <a class="home-footer-link help-section" href="/es/info/contactanos/1/">Contáctanos</a>
+                
+              </div>
+            </div>
+            <div class="footer-logo-box">
+              <div id="footer_social_media">
+                
+                  <a class="home-footer-link social-media-section" href="https://www.facebook.com/GCFAprendeLibre" target="_blank">
+                    <img id="fb_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/facebook_icon.svg" alt="facebook"/>
+                  </a>
+                  <a class="home-footer-link social-media-section" href="https://twitter.com/GCFAprendeLibre" target="_blank">
+                    <img id="twitter_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/twitter_icon.svg" alt="twitter"/>
+                  </a>
+                  <a class="home-footer-link social-media-section" href="https://www.youtube.com/GCFAprendeLibre" target="_blank">
+                    <img id="youtube_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/youtube_icon.svg" alt="youtube"/>
+                  </a>
+                  <a class="home-footer-link social-media-section" href="https://pinterest.com/GCFAprendeLibre/" target="_blank">
+                    <img id="pinterest" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/pinterest_icon.svg" alt="pinterest"/>
+                  </a>
+                  <a class="home-footer-link social-media-section" href="https://instagram.com/gcfaprendelibre/" target="_blank">
+                    <img id="instagram_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/instagram_icon.svg" alt="instagram"/>
+                  </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-wrapper">
+         <p id="copyright">
+          
+        </p>
+      </div>
+    </div>
+    <!-- <div class="mobilefooter">
+      <div class="footer-drag-handle" onclick="toggleMobileFooter()">
+        <i class="up-arrow material-icons">keyboard_arrow_up</i>
+        <i class="down-arrow material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mobileFooterContent">
+        <a href="https://gcfglobal.org/"><img class="globalicon" alt="GCFGlobal.org" src="https://media.gcflearnfree.org/global/gcfglobal-color.png"></img></a>
+        <p id="copyrightMobile">
+          
+        </p>
+      </div>
+    </div> -->
+  </footer>
+<script defer src="oidc-client.slim.min.js" type="589d276859ed819dbf8bc76a-text/javascript"></script>
+<script defer src="auth-oidc.js" type="589d276859ed819dbf8bc76a-text/javascript"></script>
+  
+    <iframe id="support-iframe" class="support-iframe" src="" style="border: none; position: fixed;bottom: 0;right: 0;height: 102px;width: 102px;"></iframe>
+  
+  <script defer src="defer-lessonPage.concat.js" type="589d276859ed819dbf8bc76a-text/javascript"></script>
+  <script defer type="589d276859ed819dbf8bc76a-text/javascript">
+    window.addEventListener('load', function() {
+        
+        jQuery('a.header-tutorial-link').click(function() {
+          gtag('event', 'conversion', {'send_to': 'AW-1060708011/U9qUCI2JURCrveT5Aw'});
+        });
+        jQuery('a.nextLoadMore').click(function() {
+          gtag('event', 'conversion', {'send_to': 'AW-1060708011/JhjyCOmUbxCrveT5Aw'});
+        });
+        
+    });
+  </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="589d276859ed819dbf8bc76a-|49" defer></script></body>
+</html>
